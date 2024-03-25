@@ -1,0 +1,52 @@
+/* Nav Bar */
+.header__nav {
+  display: flex;
+}
+
+.header__logo {
+  display: flex;
+  flex: 1;
+  position: relative;
+  padding: 20px;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: var(--plus-jakarta-sans);
+  padding: 20px;
+  gap: 64px;
+  flex: 1.236;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header__logo-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  z-index: -1;
+}
+
+.header__logo h4 {
+  color: var(--color-white);
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.header__menu-mobile {
+  display: none;
+  position: relative;
+}
