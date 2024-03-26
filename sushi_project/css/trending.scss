@@ -1,17 +1,17 @@
-@use "../_style";
+@use "mixin";
 
 .trending-sushi {
   display: flex;
   flex-direction: row;
 }
 
-.trending-sushi__content p:first-child {
-  @include sushi-subtitle;
-}
+// .trending-sushi__content p:first-child {
+//   @include sushi-subtitle;
+// }
 
-.trending-sushi__content h3 {
-  @include sushi-title;
-}
+// .trending-sushi__content h3 {
+//   @include sushi-title;
+// }
 
 .trending-sushi__image img {
   width: 254px;

@@ -1,4 +1,4 @@
-@use "../_style";
+@import "mixin";
 
 .popular-food {
   display: flex;
@@ -74,7 +74,7 @@
   padding: 38px;
   align-items: center;
   margin-top: 64px;
-  // @include card-border;
+  @include card-border;
   height: fit-content;
 }
 
