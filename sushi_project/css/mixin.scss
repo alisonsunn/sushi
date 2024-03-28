@@ -37,3 +37,9 @@
   opacity: 0.8;
   margin: 32px 0px;
 }
+
+@mixin input-font {
+  color: var(--color-white);
+  opacity: 0.5;
+  font-family: var(--plus-jakarta-sans);
+}
