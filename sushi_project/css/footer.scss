@@ -1,0 +1,52 @@
+@import "mixin";
+// footer icons
+
+.footer {
+  padding: 20px 40px;
+  background-color: var(--color-white);
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer__menu {
+    @include menu;
+
+    li a {
+      color: var(--secondary-color);
+    }
+  }
+
+  .footer__logo h4 {
+    @include logo;
+    color: var(--secondary-color);
+
+    span {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.footer__icons {
+  display: flex;
+  gap: 32px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color: var(--secondary-color);
+    border-radius: 100%;
+
+    img {
+      width: 45%;
+      height: 45%;
+      object-fit: contain;
+    }
+  }
+}

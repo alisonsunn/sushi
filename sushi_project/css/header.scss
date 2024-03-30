@@ -1,3 +1,5 @@
+@import "mixin";
+
 /* Nav Bar */
 .header__nav {
   display: flex;
@@ -11,17 +13,13 @@
 }
 
 .header__menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
+  @include menu;
   justify-content: flex-end;
-  font-family: var(--plus-jakarta-sans);
-  padding: 20px;
-  gap: 64px;
   flex: 1.236;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
+
+  li a {
+    color: var(--secondary-color);
+  }
 }
 
 .header__logo-overlay {
@@ -33,11 +31,7 @@
 }
 
 .header__logo h4 {
-  color: var(--color-white);
-  padding-left: 30px;
-  font-weight: 700;
-  font-size: 24px;
-  text-transform: uppercase;
+  @include logo;
 }
 
 .header__menu li img {
