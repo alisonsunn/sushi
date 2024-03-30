@@ -62,25 +62,8 @@
 // image
 
 .trending-sushi__image {
-  background-color: var(--color-white);
-  padding: 32px 64px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  flex: 1;
-
-  .sushi__image-overlay {
-    position: absolute;
-    background-image: url("../assets/japanese_sushi.png");
-    z-index: 2;
-    background-size: contain;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
+  @include trending-sushi;
+  background-image: url("../assets/japanese_sushi.png");
 
   img {
     width: 254px;
@@ -121,19 +104,27 @@
   }
 }
 
-.drinks-arrow-horizontal {
-  position: absolute;
-  top: -10.5px;
-
-  img {
-    height: 100%;
-    width: auto;
+.trending-drinks {
+  .trending-sushi__image {
+    background-image: none;
   }
+  .drinks-arrow-horizontal {
+    position: absolute;
+    top: -10.5px;
+  
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  
 }
+
 
 // trending-discover
 .trending {
   position: relative;
+  font-family: var(--plus-jakarta-sans);
 }
 
 .trending-discover {

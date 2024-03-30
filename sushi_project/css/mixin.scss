@@ -63,3 +63,17 @@
   font-size: 24px;
   text-transform: uppercase;
 }
+
+@mixin trending-sushi {
+  background-color: var(--color-white);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 32px 64px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  flex: 1;
+}

@@ -11,9 +11,11 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
   .footer__menu {
     @include menu;
+    flex-wrap: wrap;
 
     li a {
       color: var(--secondary-color);
